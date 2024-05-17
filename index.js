@@ -22,14 +22,28 @@
 
 
 // Here b is called parameter
-function outer(b){
-    function inner(){
-        console.log(a,b)
-    }
-    let a = 10;
-    inner();
-}
-var z = outer(20);
-// Here the string is called argument
-z();
+// function outer(b){
+//     function inner(){
+//         console.log(a,b)
+//     }
+//     let a = 10;
+//     inner();
+// }
+// var z = outer(20);
+// // Here the string is called argument
+// z();
 
+function outest(){
+    var c = 2000;
+    function outer(b){
+        function inner(){
+            console.log(a,b,c)
+        }
+        var a = 10;
+        inner();
+    }
+    outer("Shreya outer");
+}
+var a = 150;
+var z = outest();
+z();
