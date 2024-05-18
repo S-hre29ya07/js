@@ -65,15 +65,27 @@
 // ans = reverseString(str)
 // console.log(ans)
 
-function evenNum(arr){
-    var ansArray=[];
-    for (var i =0; i<=arr.length;i++){
-        if(arr[i]%2 == 0){
-            ansArray.push(arr[i])
-        }
+// function evenNum(arr){
+//     var ansArray=[];
+//     for (var i =0; i<=arr.length;i++){
+//         if(arr[i]%2 == 0){
+//             ansArray.push(arr[i])
+//         }
+//     }
+//     return ansArray
+// }
+// const arr = [ 1,2,4,7,9]
+// ans = evenNum(arr)
+// console.log(ans)
+
+
+function factorial(num){
+    var ans = 1;
+    for (var i= num; i>=1; i--){
+        ans=ans*i
     }
-    return ansArray
+    return ans
 }
-const arr = [ 1,2,4,7,9]
-ans = evenNum(arr)
-console.log(ans)
+var num = 3;
+ansf = factorial(num)
+console.log(ansf)
