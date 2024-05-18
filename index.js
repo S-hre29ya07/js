@@ -37,17 +37,29 @@
 // console.log(ans)
 
 
-function palindrome(str){
-    finalStr= ""
-    for (var i =(str.length)-1; i>=0; i--){
-        finalStr= finalStr+str[i]
+// function palindrome(str){
+//     finalStr= ""
+//     for (var i =(str.length)-1; i>=0; i--){
+//         finalStr= finalStr+str[i]
+//     }
+//     if (finalStr === str){
+//         return "YES"
+//     } else{
+//         return "NO"
+//     }
+// }
+// const str = "shs"
+// ans = palindrome(str)
+// console.log(ans)
+
+function reverseString(str){
+    revStr = ""
+    for (var i = (str.length)-1; i>=0; i--){
+        revStr+=str[i]
     }
-    if (finalStr === str){
-        return "YES"
-    } else{
-        return "NO"
-    }
+    return revStr
 }
-const str = "shs"
-ans = palindrome(str)
+
+const str = "Shreya singh"
+ans = reverseString(str)
 console.log(ans)
