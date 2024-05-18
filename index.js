@@ -23,15 +23,31 @@
 // ans = findSum(1,2);
 // console.log(ans)
 
-function findMax(arr){
-    num = arr[0];
-    for (var i =1; i<arr.length; i++){
-        if(arr[i]>num){
-            num = arr[i]
-        }
+// function findMax(arr){
+//     num = arr[0];
+//     for (var i =1; i<arr.length; i++){
+//         if(arr[i]>num){
+//             num = arr[i]
+//         }
+//     }
+//     return num
+// }
+// const arr = [1,2,3,7];
+// ans = findMax(arr)
+// console.log(ans)
+
+
+function palindrome(str){
+    finalStr= ""
+    for (var i =(str.length)-1; i>=0; i--){
+        finalStr= finalStr+str[i]
     }
-    return num
+    if (finalStr === str){
+        return "YES"
+    } else{
+        return "NO"
+    }
 }
-const arr = [1,2,3,7];
-ans = findMax(arr)
+const str = "shs"
+ans = palindrome(str)
 console.log(ans)
