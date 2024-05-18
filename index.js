@@ -52,14 +52,28 @@
 // ans = palindrome(str)
 // console.log(ans)
 
-function reverseString(str){
-    revStr = ""
-    for (var i = (str.length)-1; i>=0; i--){
-        revStr+=str[i]
-    }
-    return revStr
-}
+// function reverseString(str){
+//     revStr = ""
+//     for (var i = (str.length)-1; i>=0; i--){
+//         revStr+=str[i]
+//     }
+//     return revStr
 
-const str = "Shreya singh"
-ans = reverseString(str)
+// }
+
+// const str = "Shreya singh"
+// ans = reverseString(str)
+// console.log(ans)
+
+function evenNum(arr){
+    var ansArray=[];
+    for (var i =0; i<=arr.length;i++){
+        if(arr[i]%2 == 0){
+            ansArray.push(arr[i])
+        }
+    }
+    return ansArray
+}
+const arr = [ 1,2,4,7,9]
+ans = evenNum(arr)
 console.log(ans)
