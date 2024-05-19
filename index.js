@@ -79,13 +79,36 @@
 // console.log(ans)
 
 
-function factorial(num){
-    var ans = 1;
-    for (var i= num; i>=1; i--){
-        ans=ans*i
-    }
-    return ans
+// function factorial(num){
+//     var ans = 1;
+//     for (var i= num; i>=1; i--){
+//         ans=ans*i
+//     }
+//     return ans
+// }
+// var num = 3;
+// ansf = factorial(num)
+// console.log(ansf)
+
+
+// function counter(){
+//     var count = 0;
+//     function incrementCounter(){
+//         count++;
+//         console.log(count)
+//     }
+//     return incrementCounter;
+// }
+// var ans = counter();
+// ans()
+// ans()
+// ans()
+
+function countButton(){
+    var count =0;
+    document.getElementById("clickme").addEventListener("click", function x(){
+        count++;
+        console.log("Button clicked", count)
+    })
 }
-var num = 3;
-ansf = factorial(num)
-console.log(ansf)
+countButton()
