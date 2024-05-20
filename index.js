@@ -104,11 +104,35 @@
 // ans()
 // ans()
 
-function countButton(){
-    var count =0;
-    document.getElementById("clickme").addEventListener("click", function x(){
-        count++;
-        console.log("Button clicked", count)
-    })
+// function findCount(arr){
+//     var count = {};
+//     for(var i =0; i<arr.length;i++){
+//         element= arr[i];
+//         if(count[element]){
+//             count[element]++
+//         }else{
+//             count[element]=1
+//         }
+//     }
+//     return count
+// }
+// const arr= [1,2,2,3,3,3,4,4,4,4]
+// ans = findCount(arr)
+// console.log(ans)
+
+function findCount(arr){
+    var count = {};
+    for( var i of arr){
+        if ( i in count){
+            count[i]++;
+        }
+        else{
+            count[i]=1
+        }
+    }
+    return Object.entries(count).map(([key,value]) => `${key} - ${value}`)
 }
-countButton()
+
+const arr= [1,2,2,3,3,3,4,4,4,4]
+ans = findCount(arr)
+console.log(ans)
