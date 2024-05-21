@@ -58,28 +58,34 @@
 // ans= findMixedSum(arr);
 // console.log(ans)
 
-// Write a JavaScript program that takes an array of numbers and returns the third smallest number.
-// function findThirdSmallest(arr){
-//    for(let i =0; i<arr.length; i++){
-//     for(let j=1; j<)
-//    }
-// }
-// const arr =[2,3,5,7,1]
-// ans=findThirdSmallest(arr)
-// console.log(ans)
-
 
 // Sort array
-function sorting(arr){
-    for (var i =0; i<arr.length; i++){
-        for (var j =0; j<(arr.length-i-1); j++){
+// function sorting(arr){
+//     for (var i =0; i<arr.length; i++){
+//         for (var j =0; j<(arr.length-i-1); j++){
+//             if(arr[j]>arr[j+1]){
+//                 [arr[j], arr[j+1]] = [arr[j+1], arr[j]]
+//             }
+//         }
+//     }
+//     return arr
+// }
+// const arr = [1,4,3,2,6,7]
+// ans = sorting(arr)
+// console.log(ans)
+
+// Write a JavaScript program that takes an array of numbers and returns the third smallest number.
+function findThirdsmallest(arr){
+    for(var i =0; i<arr.length;i++){
+        for(var j =0; j<(arr.length-i-1);j++){
             if(arr[j]>arr[j+1]){
-                [arr[j], arr[j+1]] = [arr[j+1], arr[j]]
+              [arr[j], arr[j+1]] = [arr[j+1], arr[j]]
             }
         }
     }
-    return arr
+    return arr[2]
 }
-const arr = [1,4,3,2,6,7]
-ans = sorting(arr)
+const arr = [1,4,3,2,6,7];
+ans = findThirdsmallest(arr)
 console.log(ans)
+
