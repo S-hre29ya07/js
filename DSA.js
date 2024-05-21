@@ -14,15 +14,30 @@
 // console.log(ans)
 
 // Write a JavaScript program to get all the indexes where NaN is found in a given array of numbers and NaN.
-function findNaN(arr){
-    var ans=[];
-    for (let i in arr){
-        if (Number.isNaN(arr[i])){
-            ans.push(parseInt(i))
+// function findNaN(arr){
+//     var ans=[];
+//     for (let i in arr){
+//         if (Number.isNaN(arr[i])){
+//             ans.push(parseInt(i))
+//         }
+//     }
+//     return ans
+// }
+// const arr = [2, 4, NaN, 16, 32, NaN]
+// ans = findNaN(arr)
+// console.log(ans)
+
+
+// Write a JavaScript program to check if an array is a factor chain or not.
+function findfactorchain(arr){
+    for(var i =0; i<arr.length-1; i++){
+        if (arr[i+1] % arr[i] !=0){
+            return false
         }
     }
-    return ans
+    return true
 }
-const arr = [2, 4, NaN, 16, 32, NaN]
-ans = findNaN(arr)
+const arr = [2, 4, 16, 32]
+ans=findfactorchain(arr)
 console.log(ans)
+
