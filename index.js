@@ -120,19 +120,39 @@
 // ans = findCount(arr)
 // console.log(ans)
 
-function findCount(arr){
-    var count = {};
-    for( var i of arr){
-        if ( i in count){
-            count[i]++;
-        }
-        else{
-            count[i]=1
-        }
-    }
-    return Object.entries(count).map(([key,value]) => `${key} - ${value}`)
-}
+// function findCount(arr){
+//     var count = {};
+//     for( var i of arr){
+//         if ( i in count){
+//             count[i]++;
+//         }
+//         else{
+//             count[i]=1
+//         }
+//     }
+//     return Object.entries(count).map(([key,value]) => `${key} - ${value}`)
+// }
 
-const arr= [1,2,2,3,3,3,4,4,4,4]
-ans = findCount(arr)
-console.log(ans)
+// const arr= [1,2,2,3,3,3,4,4,4,4]
+// ans = findCount(arr)
+// console.log(ans)
+
+
+// function countOcc(arr){
+//     var count ={}
+//     for (var i of arr){
+//         if (i in count){
+//             count[i]++
+//         }
+//         else{
+//             count[i]=1
+//         }
+//     }
+//     return Object.entries(count).map(([key,value])=> `${key}-${value}`)
+// }
+// const arr = [1,1,2,3,3,3,4,4]
+// ans= countOcc(arr)
+// console.log(ans)
+
+
+// C
