@@ -75,17 +75,30 @@
 // console.log(ans)
 
 // Write a JavaScript program that takes an array of numbers and returns the third smallest number.
-function findThirdsmallest(arr){
-    for(var i =0; i<arr.length;i++){
-        for(var j =0; j<(arr.length-i-1);j++){
-            if(arr[j]>arr[j+1]){
-              [arr[j], arr[j+1]] = [arr[j+1], arr[j]]
-            }
-        }
-    }
-    return arr[2]
-}
-const arr = [1,4,3,2,6,7];
-ans = findThirdsmallest(arr)
-console.log(ans)
+// function findThirdsmallest(arr){
+//     for(var i =0; i<arr.length;i++){
+//         for(var j =0; j<(arr.length-i-1);j++){
+//             if(arr[j]>arr[j+1]){
+//               [arr[j], arr[j+1]] = [arr[j+1], arr[j]]
+//             }
+//         }
+//     }
+//     return arr[2]
+// }
+// const arr = [1,4,3,2,6,7];
+// ans = findThirdsmallest(arr)
+// console.log(ans)
 
+// Write a JavaScript program that takes an array of integers and returns false if every number is not prime. Otherwise, return true.
+
+function numPrime(arr){                                                                                                            
+   for(var i of arr){
+    if(i==1 || (i>2 && i%2==0)){
+        return false
+    }
+   }
+   return true
+}
+const arr=[3,5,7]
+ans=numPrime(arr);
+console.log(ans)
