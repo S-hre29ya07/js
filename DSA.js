@@ -91,14 +91,30 @@
 
 // Write a JavaScript program that takes an array of integers and returns false if every number is not prime. Otherwise, return true.
 
-function numPrime(arr){                                                                                                            
-   for(var i of arr){
-    if(i==1 || (i>2 && i%2==0)){
-        return false
+// function numPrime(arr){                                                                                                            
+//    for(var i of arr){
+//     if(i==1 || (i>2 && i%2==0)){
+//         return false
+//     }
+//    }
+//    return true
+// }
+// const arr=[3,5,7]
+// ans=numPrime(arr);
+// console.log(ans)
+
+// Write a JavaScript program to find all the unique values in a set of numbers.
+function uniqueEle(arr){
+    const dict =[];
+    for(var i=0; i<=arr.length-1; i++){
+        if (!dict.includes(arr[i])){
+           dict.push(arr[i])
+        }
     }
-   }
-   return true
+    return dict
 }
-const arr=[3,5,7]
-ans=numPrime(arr);
+const arr =[1, 2, 2, 3, 4, 4, 5]
+ans=uniqueEle(arr)
 console.log(ans)
+
+
