@@ -157,25 +157,48 @@
 
 // HOF
 
-const arr = [1,2,3,4]
+// const arr = [1,2,3,4]
 
-function area(r){
-    return 3.14*r*r
-}
-function circ(r){
-    return 3.14*r*2
-}
-function dia(r){
-    return 2*r
-}
+// function area(r){
+//     return 3.14*r*r
+// }
+// function circ(r){
+//     return 3.14*r*2
+// }
+// function dia(r){
+//     return 2*r
+// }
 
-function ans(arr, logic){
-    var final =[]
-    for (var i=0; i<arr.length; i++){
-        final.push(logic(arr[i]))
+// function ans(arr, logic){
+//     var final =[]
+//     for (var i=0; i<arr.length; i++){
+//         final.push(logic(arr[i]))
+//     }
+//     return final
+// }
+// console.log(arr
+//     .map(area))
+// console.log(ans(arr, circ))
+// console.log(ans(arr, dia))
+
+const arr =[1,2,3,4]
+
+function diameter(arr){
+    var ans=[]
+    for (var i=0; i<arr.length;i++){
+        ans.push(2*arr[i])
     }
-    return final
+    return ans
 }
-console.log(ans(arr, area))
-console.log(ans(arr, circ))
-console.log(ans(arr, dia))
+final= diameter(arr)
+console.log(final)
+
+function diameter(num){
+    return 2*num
+}
+
+var ans= arr.map(diameter)
+
+
+ans = arr.map((x)=> 2*x)
+console.log(ans)
