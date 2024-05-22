@@ -104,17 +104,55 @@
 // console.log(ans)
 
 // Write a JavaScript program to find all the unique values in a set of numbers.
-function uniqueEle(arr){
-    const dict =[];
-    for(var i=0; i<=arr.length-1; i++){
-        if (!dict.includes(arr[i])){
-           dict.push(arr[i])
-        }
+// function uniqueEle(arr){
+//     const dict =[];
+//     for(var i=0; i<=arr.length-1; i++){
+//         if (!dict.includes(arr[i])){
+//            dict.push(arr[i])
+//         }
+//     }
+//     return dict
+// }
+// const arr =[1, 2, 2, 3, 4, 4, 5]
+// ans=uniqueEle(arr)
+// console.log(ans)
+
+// Function that takes radius and returns area of circle
+
+const arr = [1,2,3,4]
+
+function areaCircle(arr){
+    var final= [];
+    for (var i=0; i<arr.length; i++){
+        final.push(arr[i]*arr[i]*3.14)
     }
-    return dict
+    return final
 }
-const arr =[1, 2, 2, 3, 4, 4, 5]
-ans=uniqueEle(arr)
+ans= areaCircle(arr);
 console.log(ans)
+
+function circCircle(arr){
+    var final= [];
+    for (var i=0; i<arr.length; i++){
+        final.push(2*arr[i]*3.14)
+    }
+    return final
+}
+
+ans= circCircle(arr);
+console.log(ans)
+
+function DiaCircle(arr){
+    var final= [];
+    for (var i=0; i<arr.length; i++){
+        final.push(2*arr[i])
+    }
+    return final
+}
+
+ans= DiaCircle(arr);
+console.log(ans)
+
+
 
 

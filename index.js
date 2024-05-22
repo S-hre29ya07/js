@@ -155,4 +155,27 @@
 // console.log(ans)
 
 
-// C
+// HOF
+
+const arr = [1,2,3,4]
+
+function area(r){
+    return 3.14*r*r
+}
+function circ(r){
+    return 3.14*r*2
+}
+function dia(r){
+    return 2*r
+}
+
+function ans(arr, logic){
+    var final =[]
+    for (var i=0; i<arr.length; i++){
+        final.push(logic(arr[i]))
+    }
+    return final
+}
+console.log(ans(arr, area))
+console.log(ans(arr, circ))
+console.log(ans(arr, dia))
