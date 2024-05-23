@@ -175,47 +175,67 @@
 
 // Find sum using function
 
-function findSum(arr){
-    var summ=0;
-    for(var i=0; i<arr.length; i++){
-        summ+=arr[i]
-    }
-    return summ
-}
-const arr =[1,2,3,4,5]
-ans=findSum(arr)
-console.log(ans)
+// function findSum(arr){
+//     var summ=0;
+//     for(var i=0; i<arr.length; i++){
+//         summ+=arr[i]
+//     }
+//     return summ
+// }
+// const arr =[1,2,3,4,5]
+// ans=findSum(arr)
+// console.log(ans)
 
-find sum using map
-const arr= [1,2,3,4,5]
-const output= arr.reduce(function(acc, curr){
-    return acc= acc+curr
-},0)
-console.log(output)
+// find sum using map
+// const arr= [1,2,3,4,5]
+// const output= arr.reduce(function(acc, curr){
+//     return acc= acc+curr
+// },0)
+// console.log(output)
 
 
 // Find maximum using function
-function findMax(arr){
-    var maxx=arr[0]
-    for(var i=1; i<arr.length; i++){
-        if (arr[i]<maxx){
-            i++
-        }else{
-            maxx = arr[i]
-        }
+// function findMax(arr){
+//     var maxx=arr[0]
+//     for(var i=1; i<arr.length; i++){
+//         if (arr[i]<maxx){
+//             i++
+//         }else{
+//             maxx = arr[i]
+//         }
+//     }
+//     return maxx
+// }
+// const arr =[1,2,5,9]
+// ans=findMax(arr)
+// console.log(ans)
+
+
+// const arr =[1,2,5,3,8]
+// output = arr.reduce(function(acc,curr){
+//     if(curr>acc){
+//         acc=curr
+//     }
+//     return acc
+// },arr[0])
+// console.log(output)
+
+
+// return the array from object by making full name
+const users=[
+    {firstName:"shreya", lastName:"singh", age:4},
+    {firstName:"hello", lastName:"world", age:4},
+    {firstName:"namaste", lastName:"js", age:4},
+    {firstName:"akshay", lastName:"saini", age:4},
+]
+// ans=["shreya singh","hello wolrd", "namaste js","akshay saini"]
+
+function findFullName(users){
+    const final=[]
+    for(var i=0; i<users.length; i++){
+        final.push(users[i].firstName+ " " + users[i].lastName)
     }
-    return maxx
+    return final
 }
-const arr =[1,2,5,9]
-ans=findMax(arr)
+ans= findFullName(users)
 console.log(ans)
-
-
-const arr =[1,2,5,3,8]
-output = arr.reduce(function(acc,curr){
-    if(curr>acc){
-        acc=curr
-    }
-    return acc
-},arr[0])
-console.log(output)
