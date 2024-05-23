@@ -230,12 +230,17 @@ const users=[
 ]
 // ans=["shreya singh","hello wolrd", "namaste js","akshay saini"]
 
-function findFullName(users){
-    const final=[]
-    for(var i=0; i<users.length; i++){
-        final.push(users[i].firstName+ " " + users[i].lastName)
-    }
-    return final
-}
-ans= findFullName(users)
-console.log(ans)
+// function findFullName(users){
+//     const final=[]
+//     for(var i=0; i<users.length; i++){
+//         final.push(users[i].firstName+ " " + users[i].lastName)
+//     }
+//     return final
+// }
+// ans= findFullName(users)
+// console.log(ans)
+
+
+
+output = users.map((x)=> x.firstName+" "+ x.lastName);
+console.log(output)
