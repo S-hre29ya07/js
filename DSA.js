@@ -154,5 +154,68 @@
 // console.log(ans)
 
 
+// count of elements in array
+
+// function countNumber(arr){
+//     var ans= {}
+//     for(var i of arr){
+//         if (ans[i]){
+//             ans[i]++
+//         }
+//         else{
+//             ans[i]=1
+//         }
+//     }
+//     return ans
+// }
+// const arr = [1,2,2,2,3,3,4]
+// ans= countNumber(arr)
+// console.log(Object.entries(ans).map(([key, value]) => `${key} - ${value}`))
 
 
+// Find sum using function
+
+function findSum(arr){
+    var summ=0;
+    for(var i=0; i<arr.length; i++){
+        summ+=arr[i]
+    }
+    return summ
+}
+const arr =[1,2,3,4,5]
+ans=findSum(arr)
+console.log(ans)
+
+find sum using map
+const arr= [1,2,3,4,5]
+const output= arr.reduce(function(acc, curr){
+    return acc= acc+curr
+},0)
+console.log(output)
+
+
+// Find maximum using function
+function findMax(arr){
+    var maxx=arr[0]
+    for(var i=1; i<arr.length; i++){
+        if (arr[i]<maxx){
+            i++
+        }else{
+            maxx = arr[i]
+        }
+    }
+    return maxx
+}
+const arr =[1,2,5,9]
+ans=findMax(arr)
+console.log(ans)
+
+
+const arr =[1,2,5,3,8]
+output = arr.reduce(function(acc,curr){
+    if(curr>acc){
+        acc=curr
+    }
+    return acc
+},arr[0])
+console.log(output)

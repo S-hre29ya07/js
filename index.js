@@ -181,24 +181,24 @@
 // console.log(ans(arr, circ))
 // console.log(ans(arr, dia))
 
-const arr =[1,2,3,4]
+// const arr =[1,2,3,4]
 
-function diameter(arr){
-    var ans=[]
-    for (var i=0; i<arr.length;i++){
-        ans.push(2*arr[i])
-    }
-    return ans
-}
-final= diameter(arr)
-console.log(final)
+// function diameter(arr){
+//     var ans=[]
+//     for (var i=0; i<arr.length;i++){
+//         ans.push(2*arr[i])
+//     }
+//     return ans
+// }
+// final= diameter(arr)
+// console.log(final)
 
-function diameter(num){
-    return 2*num
-}
+// function diameter(num){
+//     return 2*num
+// }
 
-var ans= arr.map(diameter)
+// var ans= arr.map(diameter)
 
 
-ans = arr.map((x)=> 2*x)
-console.log(ans)
+// ans = arr.map((x)=> 2*x)
+// console.log(ans)
