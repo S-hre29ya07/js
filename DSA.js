@@ -222,12 +222,7 @@
 
 
 // return the array from object by making full name
-const users=[
-    {firstName:"shreya", lastName:"singh", age:4},
-    {firstName:"hello", lastName:"world", age:4},
-    {firstName:"namaste", lastName:"js", age:4},
-    {firstName:"akshay", lastName:"saini", age:4},
-]
+
 // ans=["shreya singh","hello wolrd", "namaste js","akshay saini"]
 
 // function findFullName(users){
@@ -242,5 +237,94 @@ const users=[
 
 
 
-output = users.map((x)=> x.firstName+" "+ x.lastName);
+// output = users.map((x)=> x.firstName+" "+ x.lastName);
+// console.log(output)
+
+// function findAge(users){
+//     var final ={}
+//     for(var i=0; i<users.length; i++){
+//         if(!final[users[i].age]){
+//             final[users[i].age]=1
+//         }else{
+//             final[users[i].age]++
+//         }
+//     }
+//     return final
+// }
+// ans= findAge(users)
+// console.log(ans)
+
+// function findfullName(ele){
+//     return ele.firstName + " " + ele.lastName
+// }
+// var output = users.map(findfullName)
+// console.log(output)
+
+
+
+// ans= {27:1, 23:1, 24:2}
+
+// const output = users.reduce(function(acc, curr){
+//     if(acc[curr.age]){
+//         acc[curr.age]+=1
+//     }else{
+//         acc[curr.age]=1
+//     }
+//     return acc
+// },{})
+// console.log(output)
+
+// find first name of all the people whose age is less than 30
+// const users=[
+//     {firstName:"shreya", lastName:"singh", age:27},
+//     {firstName:"hello", lastName:"world", age:23},
+//     {firstName:"namaste", lastName:"js", age:24},
+//     {firstName:"akshay", lastName:"saini", age:34},
+// ]
+
+
+// const output = users.reduce(function(acc,curr){
+//     if(curr.age<30){
+//         acc.push(curr.firstName)
+//     }
+//     return acc
+// },[])
+// console.log(output)
+
+// function findPeople(users){
+//     ans=[]
+//     for (var i=0; i<users.length; i++){
+//         if(users[i].age<30){
+//             ans.push(users[i].firstName)
+//         }
+//     }
+//     return ans
+// }
+// var ans= findPeople(users)
+// console.log(ans)
+
+const arr = [1,2,3,3,4,4,4]
+
+output = arr.reduce(function(acc,curr){
+    if(acc[curr]){
+        acc[curr]+=1
+    }else{
+        acc[curr] = 1
+    }
+    return acc
+},{})
+console.log(output)
+
+function findCount(arr){
+    var ans={}
+    for(var i =0; i<arr.length; i++){
+        if (ans[arr[i]]){
+            ans[arr[i]]+=1
+        }else{
+            ans[arr[i]] =1
+        }
+    }
+    return ans
+}
+output= findCount(arr)
 console.log(output)
