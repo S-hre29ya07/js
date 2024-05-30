@@ -303,28 +303,35 @@
 // var ans= findPeople(users)
 // console.log(ans)
 
-const arr = [1,2,3,3,4,4,4]
+// const arr = [1,2,3,3,4,4,4]
 
-output = arr.reduce(function(acc,curr){
-    if(acc[curr]){
-        acc[curr]+=1
-    }else{
-        acc[curr] = 1
-    }
-    return acc
-},{})
-console.log(output)
+// output = arr.reduce(function(acc,curr){
+//     if(acc[curr]){
+//         acc[curr]+=1
+//     }else{
+//         acc[curr] = 1
+//     }
+//     return acc
+// },{})
+// console.log(output)
 
-function findCount(arr){
-    var ans={}
-    for(var i =0; i<arr.length; i++){
-        if (ans[arr[i]]){
-            ans[arr[i]]+=1
-        }else{
-            ans[arr[i]] =1
-        }
-    }
-    return ans
-}
-output= findCount(arr)
-console.log(output)
+// function findCount(arr){
+//     var ans={}
+//     for(var i =0; i<arr.length; i++){
+//         if (ans[arr[i]]){
+//             ans[arr[i]]+=1
+//         }else{
+//             ans[arr[i]] =1
+//         }
+//     }
+//     return ans
+// }
+// output= findCount(arr)
+// console.log(output)
+
+// var arr = [10, 32, 65, 2];
+// for (let i = 0; i < arr.length; i++) {
+//   setTimeout(function() {
+//     console.log('The index of this number is: ' + i);
+//   }, 3000);
+// }
